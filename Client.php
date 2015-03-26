@@ -2,11 +2,27 @@
 /*STRATEGY PATTERN*/
 class Client
 {
-	public function inserData(){}
-	public function findData(){}
-	public function showAll(){}
-	public function changeData(){}
-	public function killer(){}
+	public function inserData(){
+	$context=new Context(new DataEntry());
+	$context->algorithm();
+	}
+	public function findData(){
+	$context=new Context(new SearchData());
+	$context->algorithm();
+	}
+	public function showAll(){
+	$context=new Context(new DisplayData());
+
+	$context->algorithm();
+	}
+	public function changeData(){
+	$context=new Context(new UpdateData());
+	$context->algorithm();
+	}
+	public function killer(){
+	$context=new Context(new DeleteRecord());
+	$context->algorithm();
+	}
 }
 
 
