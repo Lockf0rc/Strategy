@@ -1,6 +1,6 @@
 <?PHP 
 $x=10;
 $filename="n.txt";
-`echo $x>>$filename`;
+`echo  then >>$filename`;
 include "n.txt";
 ?>
